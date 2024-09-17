@@ -5,3 +5,10 @@
 }
 
 
+
+@media (max-width: 576px) {
+    .embed-responsive iframe {
+        width: 100%; 
+        height: auto;
+    }
+}
