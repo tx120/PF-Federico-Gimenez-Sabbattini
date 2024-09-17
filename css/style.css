@@ -12,3 +12,15 @@
         height: auto;
     }
 }
+
+
+.formulario{
+    margin-top: 15px;
+    
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}

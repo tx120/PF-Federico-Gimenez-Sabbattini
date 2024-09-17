@@ -12,16 +12,16 @@
 
 <body>
     <header class=" bg-dark">
-        <div class="container" >
+        <div class="container">
             <div class=" row">
-            <div class="col">
-                <div class="banner">
-                    <img src="../img/banner2.jpeg" alt="Banner promocional" class="img-fluid">
+                <div class="col">
+                    <div class="banner">
+                        <img src="../img/banner2.jpeg" alt="Banner promocional" class="img-fluid">
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
-        
+
         <nav class="navbar navbar-expand-lg navbar-light bg-success">
             <div class="container-fluid">
 
@@ -54,9 +54,48 @@
 
     </header>
 
+    <main class="container">
+        <div class="row formulario">
+            <div class="col-md-6">
+                <h1>A tener en cuenta</h1>
+                <p>Los pedidos serán evaluados y pueden ser rechazados. Por favor deje en claro la urgencia del pedido y este atento a los medios de contacto que registre en el formulario </p>
+            </div>
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="apellido" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="apellido" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Teléfono (opcional)</label>
+                        <input type="tel" class="form-control" id="telefono">
+                    </div>
+                    <div class="mb-3">
+                        <label for="institucion" class="form-label">Institución (opcional)</label>
+                        <input type="text" class="form-control" id="institucion">
+                    </div>
+                    <div class="mb-3">
+                        <label for="pedido" class="form-label">Pedido</label>
+                        <textarea class="form-control" id="pedido" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Pedido</button>
+                </form>
+            </div>
+        </div>
+    </main>
 
 
-    <footer class="bg-dark text-white fixed-bottom text-center py-3">
+
+
+    <footer class="bg-dark text-white  text-center py-3">
         <div class="container">
             <div class="row">
                 <div class="col">
