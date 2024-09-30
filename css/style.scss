@@ -1,5 +1,51 @@
+/*---- Mobile First ----- */
+main{
+    margin-bottom: 25%;
+}
+.navbar-nav li a {
+    color: #fff;
+}
 
 
+/*----Inicio---*/
+.inicio{
+    margin-top: 30px; 
+}
+#primera-col {
+    margin-bottom: 150px;
+}
+#segunda-col .card{
+    margin-bottom: 50px;
+}
+.infoActividad{
+    margin: 5%;
+}
+
+
+@media only screen and (min-width: 992px){
+    /*---formulario donaciones---*/
+    .formulario{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        
+    }
+/*---Cards Productos---*/
+    .content-store .card-img-top {
+        height: 400px;
+        object-fit: cover;
+    }
+    .content-store .card {
+        height: 100%;
+    }
+    .content-store .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+}
+/*
 @media (max-width: 576px) {
 
 main{
@@ -15,7 +61,7 @@ body{
     min-height: 100vh;
 }
 main{
-    padding-bottom: 10%;
+    margin-bottom: 300px;
 }
 .navbar-nav li a {
     color: #fff;
@@ -35,7 +81,7 @@ main{
 .infoActividad{
     margin: 5%;
 }
-/*
+
 .content-store {
     display: flex;
     flex-direction: column;
@@ -50,7 +96,7 @@ main{
 }
 .content-store h1{
     background-color: rgba(240, 248, 255, 0.733);
-} */
+} 
 
 .card-img-top {
     height: 400px;
@@ -64,3 +110,4 @@ main{
     flex-direction: column;
     justify-content: space-between;
 }
+*/

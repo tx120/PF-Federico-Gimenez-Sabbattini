@@ -1,37 +1,87 @@
-@media (max-width: 576px) {
-  main {
-    margin-bottom: 15%;
-  }
-  .inicio {
-    flex-direction: column;
-  }
-}
-body {
-  min-height: 100vh;
-}
-
+/*---- Mobile First ----- */
 main {
-  padding-bottom: 10%;
+  margin-bottom: 25%;
 }
 
 .navbar-nav li a {
   color: #fff;
 }
 
-.formulario {
-  margin-top: 15px;
-  margin-bottom: 15px;
+/*----Inicio---*/
+.inicio {
+  margin-top: 30px;
 }
 
-#myCarousel {
-  width: 70%;
+#primera-col {
+  margin-bottom: 150px;
+}
+
+#segunda-col .card {
+  margin-bottom: 50px;
 }
 
 .infoActividad {
   margin: 5%;
 }
 
+@media only screen and (min-width: 992px) {
+  /*---formulario donaciones---*/
+  .formulario {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  /*---Cards Productos---*/
+  .content-store .card-img-top {
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .content-store .card {
+    height: 100%;
+  }
+  .content-store .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
 /*
+@media (max-width: 576px) {
+
+main{
+
+    margin-bottom: 15%;
+}
+.inicio{
+    flex-direction: column;
+}
+}
+
+body{
+    min-height: 100vh;
+}
+main{
+    margin-bottom: 300px;
+}
+.navbar-nav li a {
+    color: #fff;
+}
+
+
+.formulario{
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+#myCarousel{
+    width: 70%;
+}
+
+.infoActividad{
+    margin: 5%;
+}
+
 .content-store {
     display: flex;
     flex-direction: column;
@@ -46,19 +96,18 @@ main {
 }
 .content-store h1{
     background-color: rgba(240, 248, 255, 0.733);
-} */
+} 
+
 .card-img-top {
-  height: 400px;
-  -o-object-fit: cover;
-     object-fit: cover;
+    height: 400px;
+    object-fit: cover;
 }
-
 .card {
-  height: 100%;
+    height: 100%;
 }
-
 .card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}/*# sourceMappingURL=style.css.map */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+*//*# sourceMappingURL=style.css.map */
