@@ -17,97 +17,47 @@ main{
 #segunda-col .card{
     margin-bottom: 50px;
 }
+
+/*---Proyectos---*/
 .infoActividad{
     margin: 5%;
 }
-
-
-@media only screen and (min-width: 992px){
-    /*---formulario donaciones---*/
-    .formulario{
-        margin-top: 15px;
-        margin-bottom: 15px;
-        
-    }
-/*---Cards Productos---*/
-    .content-store .card-img-top {
-        height: 400px;
-        object-fit: cover;
-    }
-    .content-store .card {
-        height: 100%;
-    }
-    .content-store .card-body {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-
+.content-proyectos{
+    margin-top: 30px;
 }
-/*
-@media (max-width: 576px) {
-
-main{
-    
-    margin-bottom: 15%;
-}
-.inicio{
-    flex-direction: column;
-}
-}
-
-body{
-    min-height: 100vh;
-}
-main{
-    margin-bottom: 300px;
-}
-.navbar-nav li a {
-    color: #fff;
-}
-
-
+/*---Donaciones---*/
 .formulario{
-    margin-top: 15px;
+    margin-top: 30px;
     margin-bottom: 15px;
     
 }
 
-#myCarousel{
-    width: 70%;
+/*---Nosotros---*/
+.content-nosotros{
+    margin-top: 30px;
 }
 
-.infoActividad{
-    margin: 5%;
-}
 
-.content-store {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../img/tienda.jpeg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 100vh;
-
-}
-.content-store h1{
-    background-color: rgba(240, 248, 255, 0.733);
-} 
-
-.card-img-top {
+/*---Tienda---*/
+.content-store .card-img-top {
     height: 400px;
     object-fit: cover;
 }
-.card {
+.content-store .card {
     height: 100%;
 }
-.card-body {
+.content-store .card-body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-*/
+
+/*---Breakpoint desktop---*/
+@media only screen and (min-width: 992px){
+
+/*---Nosotros---*/
+#myCarousel{
+    width: 70%;
+}
+
+}
