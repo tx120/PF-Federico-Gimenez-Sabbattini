@@ -5,7 +5,9 @@ main{
 .navbar-nav li a {
     color: #fff;
 }
-
+body{
+    background-color: #F5F5F5;
+}
 
 /*----Inicio---*/
 .inicio{
@@ -16,6 +18,15 @@ main{
 }
 #segunda-col .card{
     margin-bottom: 50px;
+}
+.mapa-contenedor{
+    border-width:1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.181);
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+
 }
 
 /*---Proyectos---*/
@@ -29,7 +40,19 @@ main{
 .formulario{
     margin-top: 30px;
     margin-bottom: 15px;
-    
+    padding: 5px;
+}
+.formulario form{
+    background-color: rgb(19, 189, 133);
+    padding: 15px;
+}
+#textFormDonaciones{
+    border: solid;
+    height:fit-content;
+    margin-bottom: 15px;
+
+
+
 }
 
 /*---Nosotros---*/
@@ -54,10 +77,44 @@ main{
 
 /*---Breakpoint desktop---*/
 @media only screen and (min-width: 992px){
-
+main{
+    margin-bottom: 10%;
+}
 /*---Nosotros---*/
 #myCarousel{
     width: 70%;
+}
+
+#segunda-col {
+    animation-name: contact;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-direction:reverse;
+}
+@keyframes contact{
+0%{
+    transform: translateX(0px);
+}
+100%{
+    transform: translateX(400px);
+}    
+}
+
+#primera-col {
+    animation-name: titulo;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-direction:reverse;
+}
+@keyframes titulo{
+0%{
+    transform: translateX(0px);
+}
+100%{
+    transform: translateX(-400px);
+}    
 }
 
 }
