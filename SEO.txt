@@ -1,3 +1,4 @@
 ## Optimización de imágenes
 ## Se agregan etiquetas Main/Section/Aside..
 ## Se quitaron espacios innecesarios en el código
+## Se optimizaron los archivos de imágenes 
