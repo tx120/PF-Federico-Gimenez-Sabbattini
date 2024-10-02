@@ -8,7 +8,6 @@ main{
 body{
     background-color: #F5F5F5;
 }
-
 /*----Inicio---*/
 .inicio{
     margin-top: 30px; 
@@ -28,7 +27,6 @@ body{
     background-color: white;
 
 }
-
 /*---Proyectos---*/
 .infoActividad{
     margin: 5%;
@@ -41,40 +39,41 @@ body{
     margin-top: 30px;
     margin-bottom: 15px;
     padding: 5px;
+
+        form{
+            background-color: rgb(19, 189, 133);
+            padding: 15px;
+        }
 }
-.formulario form{
-    background-color: rgb(19, 189, 133);
-    padding: 15px;
-}
+
 #textFormDonaciones{
     border: solid;
     height:fit-content;
     margin-bottom: 15px;
-
-
-
 }
-
 /*---Nosotros---*/
 .content-nosotros{
     margin-top: 30px;
 }
-
-
 /*---Tienda---*/
-.content-store .card-img-top {
-    height: 400px;
-    object-fit: cover;
-}
-.content-store .card {
-    height: 100%;
-}
-.content-store .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 
+.content-store{
+    margin-top: 30px;
+    
+        .card{
+            height: 100%;
+            
+                .card-img-top{
+                    height: 400px;
+                    object-fit: cover;
+                }
+                .card-body{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+        }
+}
 /*---Breakpoint desktop---*/
 @media only screen and (min-width: 992px){
 main{
@@ -84,7 +83,7 @@ main{
 #myCarousel{
     width: 70%;
 }
-
+/*---Animaciones Desktop---*/
 #segunda-col {
     animation-name: contact;
     animation-duration: 3s;
@@ -100,7 +99,6 @@ main{
     transform: translateX(400px);
 }    
 }
-
 #primera-col {
     animation-name: titulo;
     animation-duration: 3s;
@@ -116,5 +114,31 @@ main{
     transform: translateX(-400px);
 }    
 }
+
+/*--- SASS interacciones ---*/
+
+@mixin selector{
+    filter:saturate(30%);
+    background-color: aqua;
+}
+
+@each $producto in producto1, producto2, producto3{
+    ##{$producto}:hover{
+        
+        @include selector();
+
+    }
+}
+
+/* esto lo podria haber resuelto con 
+
+.content-store article:hover{
+    filter:saturate(30%);
+    background-color: aqua;
+}
+    pero no se me ocurrió como implementar
+    estas funciones de sass, entiendo perfecto el while, for, if y each
+    pero no se me ocurrió donde usarlo de forma util en la pagina
+     y mi sentido de diseño estilo no aporta mucho tampoco */
 
 }
