@@ -93,7 +93,18 @@ body {
   #myCarousel {
     width: 70%;
   }
+  .content-nosotros p:hover {
+    background-color: rgba(10, 220, 10, 0.356);
+  }
+  /*---Proyectos---*/
+  .content-proyectos p {
+    padding: 5px;
+  }
+  .content-proyectos p:hover {
+    background-color: rgba(10, 220, 10, 0.356);
+  }
   /*---Animaciones Desktop---*/
+  /* animaciones inicio */
   #segunda-col {
     animation-name: contact;
     animation-duration: 3s;
