@@ -1,2 +1,2 @@
 Link github pages: https://tx120.github.io/PF-Federico-Gimenez-Sabbattini/
-Link Web desplegada netlify: https://pf-federico-gimenez-sabbattini.netlify.app/pages/proyectos
+Link Web desplegada netlify: https://pf-federico-gimenez-sabbattini.netlify.app
